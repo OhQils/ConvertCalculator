@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Calculator -Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="length.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>CONVERSION CALCULATOR</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversion.html">Conversion</a></li>
+        </ul>
+    </nav>
+
+<section>
+        <h2>Length Conversion</h2>
+        <table id="conversionTable">
+            <thead>
+                <tr>
+                    <th>Input</th>
+                    <th>Unit</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- First Row -->
+                <tr>
+                    <td rowspan="2"><input type="text" id="inputNumber" placeholder="Enter a number"></td>
+                    <td>
+                        <span>From:</span>
+                        <select id="length1">
+                            <option value="milimeters">Milimeters(mm)</option>
+                            <option value="centimeters">Centimeters(cm)</option>
+                            <option value="meters">Meters(m)</option>
+                            <option value="kilometers">Kilometers(km)</option>
+                        </select>
+                    </td>
+                    <td rowspan="2"><input type="text" id="result" readonly placeholder="Result"></td>
+                </tr>
+                <!-- Second Row -->
+                <tr>
+                    <td>
+                        <span>To:</span>
+                        <select id="length2">
+                            <option value="milimeters">Milimeters(mm)</option>
+                            <option value="centimeters">Centimeters(cm)</option>
+                            <option value="meters">Meters(m)</option>
+                            <option value="kilometers">Kilometers(km)</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="convertButton">Convert</button>
+    </section>
+
+    <footer>
+        &copy; 2024 HAIKAL AQIL. All rights reserved.
+    </footer>
+</body>
+</html>
